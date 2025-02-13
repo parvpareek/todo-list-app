@@ -1,0 +1,109 @@
+/* General styling */
+body, html, #root, .App {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Valentine landing page styles */
+  .valentine-container {
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .button-group {
+    margin-top: 20px;
+  }
+  
+  .yes-button, .no-button {
+    padding: 15px 30px;
+    margin: 0 10px;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.2s;
+  }
+  
+  .yes-button {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .no-button {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  /* Parallax sections */
+  .parallax-wrapper {
+    overflow-x: hidden;
+  }
+  
+  .parallax-section {
+    position: relative;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .overlay-text {
+    background: rgba(0,0,0,0.4);
+    padding: 20px 40px;
+    border-radius: 8px;
+  }
+  
+  .overlay-text h2 {
+    color: #fff;
+    font-size: 2em;
+  }
+  
+  /* Final animation section */
+  .final-section {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
+  
+  .images-animation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    animation: fadeIn 3s ease-in-out;
+  }
+  
+  .animated-image {
+    width: 30%;
+    margin: 10px;
+    border-radius: 10px;
+    transition: transform 0.5s;
+  }
+  
+  .animated-image:hover {
+    transform: scale(1.1);
+  }
+  
+  .conclusion h1 {
+    margin-top: 30px;
+    font-size: 2.5em;
+    color: #333;
+  }
+  
+  /* Keyframes for fadeIn */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
